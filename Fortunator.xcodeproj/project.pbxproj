@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD7C5D6E2D924A4E00D704C0 /* FortunatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D6D2D924A4E00D704C0 /* FortunatorApp.swift */; };
+		DD7C5D702D924A4E00D704C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D6F2D924A4E00D704C0 /* ContentView.swift */; };
+		DD7C5D722D924A5000D704C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7C5D712D924A5000D704C0 /* Assets.xcassets */; };
+		DD7C5D752D924A5000D704C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7C5D742D924A5000D704C0 /* Preview Assets.xcassets */; };
+		DD7C5D7F2D924A5000D704C0 /* FortunatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D7E2D924A5000D704C0 /* FortunatorTests.swift */; };
+		DD7C5D892D924A5000D704C0 /* FortunatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D882D924A5000D704C0 /* FortunatorUITests.swift */; };
+		DD7C5D8B2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D8A2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD7C5D7B2D924A5000D704C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7C5D622D924A4E00D704C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD7C5D692D924A4E00D704C0;
+			remoteInfo = Fortunator;
+		};
+		DD7C5D852D924A5000D704C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7C5D622D924A4E00D704C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD7C5D692D924A4E00D704C0;
+			remoteInfo = Fortunator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD7C5D6A2D924A4E00D704C0 /* Fortunator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortunator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7C5D6D2D924A4E00D704C0 /* FortunatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorApp.swift; sourceTree = "<group>"; };
+		DD7C5D6F2D924A4E00D704C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD7C5D712D924A5000D704C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD7C5D742D924A5000D704C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD7C5D7A2D924A5000D704C0 /* FortunatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortunatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7C5D7E2D924A5000D704C0 /* FortunatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorTests.swift; sourceTree = "<group>"; };
+		DD7C5D842D924A5000D704C0 /* FortunatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortunatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7C5D882D924A5000D704C0 /* FortunatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorUITests.swift; sourceTree = "<group>"; };
+		DD7C5D8A2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD7C5D672D924A4E00D704C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C5D772D924A5000D704C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C5D812D924A5000D704C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD7C5D612D924A4E00D704C0 = {
+			isa = PBXGroup;
+			children = (
+				DD7C5D6C2D924A4E00D704C0 /* Fortunator */,
+				DD7C5D7D2D924A5000D704C0 /* FortunatorTests */,
+				DD7C5D872D924A5000D704C0 /* FortunatorUITests */,
+				DD7C5D6B2D924A4E00D704C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD7C5D6B2D924A4E00D704C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C5D6A2D924A4E00D704C0 /* Fortunator.app */,
+				DD7C5D7A2D924A5000D704C0 /* FortunatorTests.xctest */,
+				DD7C5D842D924A5000D704C0 /* FortunatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD7C5D6C2D924A4E00D704C0 /* Fortunator */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C5D6D2D924A4E00D704C0 /* FortunatorApp.swift */,
+				DD7C5D6F2D924A4E00D704C0 /* ContentView.swift */,
+				DD7C5D712D924A5000D704C0 /* Assets.xcassets */,
+				DD7C5D732D924A5000D704C0 /* Preview Content */,
+			);
+			path = Fortunator;
+			sourceTree = "<group>";
+		};
+		DD7C5D732D924A5000D704C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C5D742D924A5000D704C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD7C5D7D2D924A5000D704C0 /* FortunatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C5D7E2D924A5000D704C0 /* FortunatorTests.swift */,
+			);
+			path = FortunatorTests;
+			sourceTree = "<group>";
+		};
+		DD7C5D872D924A5000D704C0 /* FortunatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C5D882D924A5000D704C0 /* FortunatorUITests.swift */,
+				DD7C5D8A2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift */,
+			);
+			path = FortunatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD7C5D692D924A4E00D704C0 /* Fortunator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7C5D8E2D924A5000D704C0 /* Build configuration list for PBXNativeTarget "Fortunator" */;
+			buildPhases = (
+				DD7C5D662D924A4E00D704C0 /* Sources */,
+				DD7C5D672D924A4E00D704C0 /* Frameworks */,
+				DD7C5D682D924A4E00D704C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fortunator;
+			productName = Fortunator;
+			productReference = DD7C5D6A2D924A4E00D704C0 /* Fortunator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD7C5D792D924A5000D704C0 /* FortunatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7C5D912D924A5000D704C0 /* Build configuration list for PBXNativeTarget "FortunatorTests" */;
+			buildPhases = (
+				DD7C5D762D924A5000D704C0 /* Sources */,
+				DD7C5D772D924A5000D704C0 /* Frameworks */,
+				DD7C5D782D924A5000D704C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7C5D7C2D924A5000D704C0 /* PBXTargetDependency */,
+			);
+			name = FortunatorTests;
+			productName = FortunatorTests;
+			productReference = DD7C5D7A2D924A5000D704C0 /* FortunatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD7C5D832D924A5000D704C0 /* FortunatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7C5D942D924A5000D704C0 /* Build configuration list for PBXNativeTarget "FortunatorUITests" */;
+			buildPhases = (
+				DD7C5D802D924A5000D704C0 /* Sources */,
+				DD7C5D812D924A5000D704C0 /* Frameworks */,
+				DD7C5D822D924A5000D704C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7C5D862D924A5000D704C0 /* PBXTargetDependency */,
+			);
+			name = FortunatorUITests;
+			productName = FortunatorUITests;
+			productReference = DD7C5D842D924A5000D704C0 /* FortunatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD7C5D622D924A4E00D704C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DD7C5D692D924A4E00D704C0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					DD7C5D792D924A5000D704C0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DD7C5D692D924A4E00D704C0;
+					};
+					DD7C5D832D924A5000D704C0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DD7C5D692D924A4E00D704C0;
+					};
+				};
+			};
+			buildConfigurationList = DD7C5D652D924A4E00D704C0 /* Build configuration list for PBXProject "Fortunator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD7C5D612D924A4E00D704C0;
+			productRefGroup = DD7C5D6B2D924A4E00D704C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD7C5D692D924A4E00D704C0 /* Fortunator */,
+				DD7C5D792D924A5000D704C0 /* FortunatorTests */,
+				DD7C5D832D924A5000D704C0 /* FortunatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD7C5D682D924A4E00D704C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C5D752D924A5000D704C0 /* Preview Assets.xcassets in Resources */,
+				DD7C5D722D924A5000D704C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C5D782D924A5000D704C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C5D822D924A5000D704C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD7C5D662D924A4E00D704C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C5D702D924A4E00D704C0 /* ContentView.swift in Sources */,
+				DD7C5D6E2D924A4E00D704C0 /* FortunatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C5D762D924A5000D704C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C5D7F2D924A5000D704C0 /* FortunatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7C5D802D924A5000D704C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7C5D8B2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift in Sources */,
+				DD7C5D892D924A5000D704C0 /* FortunatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD7C5D7C2D924A5000D704C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD7C5D692D924A4E00D704C0 /* Fortunator */;
+			targetProxy = DD7C5D7B2D924A5000D704C0 /* PBXContainerItemProxy */;
+		};
+		DD7C5D862D924A5000D704C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD7C5D692D924A4E00D704C0 /* Fortunator */;
+			targetProxy = DD7C5D852D924A5000D704C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD7C5D8C2D924A5000D704C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD7C5D8D2D924A5000D704C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD7C5D8F2D924A5000D704C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fortunator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.Fortunator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD7C5D902D924A5000D704C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fortunator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.Fortunator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD7C5D922D924A5000D704C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.FortunatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fortunator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fortunator";
+			};
+			name = Debug;
+		};
+		DD7C5D932D924A5000D704C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.FortunatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fortunator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fortunator";
+			};
+			name = Release;
+		};
+		DD7C5D952D924A5000D704C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.FortunatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fortunator;
+			};
+			name = Debug;
+		};
+		DD7C5D962D924A5000D704C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.FortunatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fortunator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD7C5D652D924A4E00D704C0 /* Build configuration list for PBXProject "Fortunator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C5D8C2D924A5000D704C0 /* Debug */,
+				DD7C5D8D2D924A5000D704C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7C5D8E2D924A5000D704C0 /* Build configuration list for PBXNativeTarget "Fortunator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C5D8F2D924A5000D704C0 /* Debug */,
+				DD7C5D902D924A5000D704C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7C5D912D924A5000D704C0 /* Build configuration list for PBXNativeTarget "FortunatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C5D922D924A5000D704C0 /* Debug */,
+				DD7C5D932D924A5000D704C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7C5D942D924A5000D704C0 /* Build configuration list for PBXNativeTarget "FortunatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7C5D952D924A5000D704C0 /* Debug */,
+				DD7C5D962D924A5000D704C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD7C5D622D924A4E00D704C0 /* Project object */;
+}
