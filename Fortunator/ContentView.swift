@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var fortune: String = "Tap the cookie to get your fortune!"
+    @State private var fortune: String = ""
     
     var body: some View {
         VStack {
@@ -22,14 +22,16 @@ struct ContentView: View {
             Image("fortunecookie")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 150, height: 150)
+                .frame(width: 100, height: 100)
                 .padding()
             
             Text(fortune)
-                .font(.callout)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.green)
-                .padding()
+                .font(.title2) // Default size
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.green)
+                    .padding()
+                    .lineLimit(8) // Limits to 5 lines before truncation
+                    .minimumScaleFactor(0.5) // Shrinks text if it's too long
             
             Button(action: {
                 fortune = getRandomFortune()
