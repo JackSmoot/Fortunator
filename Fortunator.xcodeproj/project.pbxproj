@@ -36,6 +36,48 @@
 
 /* Begin PBXFileReference section */
 		DD1007ED2D98AEDA008E7E06 /* FortunatorTXT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FortunatorTXT; path = ../../FortunatorHTML/FortunatorTXT; sourceTree = "<group>"; };
+		DD1007F02D98B040008E7E06 /* riddles.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = riddles.rtf; sourceTree = "<group>"; };
+		DD1007F12D98B040008E7E06 /* platitudes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = platitudes.rtf; sourceTree = "<group>"; };
+		DD1007F22D98B040008E7E06 /* fortunes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = fortunes.rtf; sourceTree = "<group>"; };
+		DD1007F32D98B040008E7E06 /* drugs.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = drugs.rtf; sourceTree = "<group>"; };
+		DD1007F42D98B040008E7E06 /* kids.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = kids.rtf; sourceTree = "<group>"; };
+		DD1007F52D98B040008E7E06 /* cookie.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = cookie.rtf; sourceTree = "<group>"; };
+		DD1007F62D98B040008E7E06 /* humorists.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = humorists.rtf; sourceTree = "<group>"; };
+		DD1007F72D98B040008E7E06 /* medicine.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = medicine.rtf; sourceTree = "<group>"; };
+		DD1007F82D98B040008E7E06 /* kngtbrd.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = kngtbrd.rtf; sourceTree = "<group>"; };
+		DD1007F92D98B040008E7E06 /* translate-me.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "translate-me.rtf"; sourceTree = "<group>"; };
+		DD1007FA2D98B040008E7E06 /* linux.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = linux.rtf; sourceTree = "<group>"; };
+		DD1007FB2D98B040008E7E06 /* men-women.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "men-women.rtf"; sourceTree = "<group>"; };
+		DD1007FC2D98B040008E7E06 /* sports.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = sports.rtf; sourceTree = "<group>"; };
+		DD1007FD2D98B040008E7E06 /* work.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = work.rtf; sourceTree = "<group>"; };
+		DD1007FE2D98B040008E7E06 /* laws.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = laws.rtf; sourceTree = "<group>"; };
+		DD1007FF2D98B040008E7E06 /* news.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = news.rtf; sourceTree = "<group>"; };
+		DD1008002D98B040008E7E06 /* science.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = science.rtf; sourceTree = "<group>"; };
+		DD1008012D98B040008E7E06 /* disclaimer.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = disclaimer.rtf; sourceTree = "<group>"; };
+		DD1008022D98B040008E7E06 /* paradoxum.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = paradoxum.rtf; sourceTree = "<group>"; };
+		DD1008032D98B040008E7E06 /* perl.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = perl.rtf; sourceTree = "<group>"; };
+		DD1008042D98B040008E7E06 /* law.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = law.rtf; sourceTree = "<group>"; };
+		DD1008052D98B040008E7E06 /* ethnic.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ethnic.rtf; sourceTree = "<group>"; };
+		DD1008062D98B040008E7E06 /* education.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = education.rtf; sourceTree = "<group>"; };
+		DD1008072D98B040008E7E06 /* miscellaneous.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = miscellaneous.rtf; sourceTree = "<group>"; };
+		DD1008082D98B040008E7E06 /* love.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = love.rtf; sourceTree = "<group>"; };
+		DD1008092D98B040008E7E06 /* politics.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = politics.rtf; sourceTree = "<group>"; };
+		DD10080A2D98B040008E7E06 /* art.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = art.rtf; sourceTree = "<group>"; };
+		DD10080B2D98B040008E7E06 /* science2.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = science2.rtf; sourceTree = "<group>"; };
+		DD10080C2D98B040008E7E06 /* definitions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = definitions.rtf; sourceTree = "<group>"; };
+		DD10080D2D98B040008E7E06 /* magic.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = magic.rtf; sourceTree = "<group>"; };
+		DD10080E2D98B040008E7E06 /* people.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = people.rtf; sourceTree = "<group>"; };
+		DD10080F2D98B040008E7E06 /* zippy.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = zippy.rtf; sourceTree = "<group>"; };
+		DD1008102D98B040008E7E06 /* computers.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = computers.rtf; sourceTree = "<group>"; };
+		DD1008112D98B040008E7E06 /* wisdom.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = wisdom.rtf; sourceTree = "<group>"; };
+		DD1008122D98B040008E7E06 /* food.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = food.rtf; sourceTree = "<group>"; };
+		DD1008132D98B040008E7E06 /* pets.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = pets.rtf; sourceTree = "<group>"; };
+		DD1008142D98B040008E7E06 /* literature.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = literature.rtf; sourceTree = "<group>"; };
+		DD1008152D98B040008E7E06 /* debian.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = debian.rtf; sourceTree = "<group>"; };
+		DD1008162D98B040008E7E06 /* startrek.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = startrek.rtf; sourceTree = "<group>"; };
+		DD1008172D98B040008E7E06 /* linuxcookie.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = linuxcookie.rtf; sourceTree = "<group>"; };
+		DD1008182D98B040008E7E06 /* songs-poems.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "songs-poems.rtf"; sourceTree = "<group>"; };
+		DD1008192D98B040008E7E06 /* goedel.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = goedel.rtf; sourceTree = "<group>"; };
 		DD7C5D6A2D924A4E00D704C0 /* Fortunator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortunator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7C5D6D2D924A4E00D704C0 /* FortunatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorApp.swift; sourceTree = "<group>"; };
 		DD7C5D6F2D924A4E00D704C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +115,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD1007EF2D98B040008E7E06 /* FortunatorTXT */ = {
+			isa = PBXGroup;
+			children = (
+				DD1007F02D98B040008E7E06 /* riddles.rtf */,
+				DD1007F12D98B040008E7E06 /* platitudes.rtf */,
+				DD1007F22D98B040008E7E06 /* fortunes.rtf */,
+				DD1007F32D98B040008E7E06 /* drugs.rtf */,
+				DD1007F42D98B040008E7E06 /* kids.rtf */,
+				DD1007F52D98B040008E7E06 /* cookie.rtf */,
+				DD1007F62D98B040008E7E06 /* humorists.rtf */,
+				DD1007F72D98B040008E7E06 /* medicine.rtf */,
+				DD1007F82D98B040008E7E06 /* kngtbrd.rtf */,
+				DD1007F92D98B040008E7E06 /* translate-me.rtf */,
+				DD1007FA2D98B040008E7E06 /* linux.rtf */,
+				DD1007FB2D98B040008E7E06 /* men-women.rtf */,
+				DD1007FC2D98B040008E7E06 /* sports.rtf */,
+				DD1007FD2D98B040008E7E06 /* work.rtf */,
+				DD1007FE2D98B040008E7E06 /* laws.rtf */,
+				DD1007FF2D98B040008E7E06 /* news.rtf */,
+				DD1008002D98B040008E7E06 /* science.rtf */,
+				DD1008012D98B040008E7E06 /* disclaimer.rtf */,
+				DD1008022D98B040008E7E06 /* paradoxum.rtf */,
+				DD1008032D98B040008E7E06 /* perl.rtf */,
+				DD1008042D98B040008E7E06 /* law.rtf */,
+				DD1008052D98B040008E7E06 /* ethnic.rtf */,
+				DD1008062D98B040008E7E06 /* education.rtf */,
+				DD1008072D98B040008E7E06 /* miscellaneous.rtf */,
+				DD1008082D98B040008E7E06 /* love.rtf */,
+				DD1008092D98B040008E7E06 /* politics.rtf */,
+				DD10080A2D98B040008E7E06 /* art.rtf */,
+				DD10080B2D98B040008E7E06 /* science2.rtf */,
+				DD10080C2D98B040008E7E06 /* definitions.rtf */,
+				DD10080D2D98B040008E7E06 /* magic.rtf */,
+				DD10080E2D98B040008E7E06 /* people.rtf */,
+				DD10080F2D98B040008E7E06 /* zippy.rtf */,
+				DD1008102D98B040008E7E06 /* computers.rtf */,
+				DD1008112D98B040008E7E06 /* wisdom.rtf */,
+				DD1008122D98B040008E7E06 /* food.rtf */,
+				DD1008132D98B040008E7E06 /* pets.rtf */,
+				DD1008142D98B040008E7E06 /* literature.rtf */,
+				DD1008152D98B040008E7E06 /* debian.rtf */,
+				DD1008162D98B040008E7E06 /* startrek.rtf */,
+				DD1008172D98B040008E7E06 /* linuxcookie.rtf */,
+				DD1008182D98B040008E7E06 /* songs-poems.rtf */,
+				DD1008192D98B040008E7E06 /* goedel.rtf */,
+			);
+			path = FortunatorTXT;
+			sourceTree = "<group>";
+		};
 		DD7C5D612D924A4E00D704C0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +188,7 @@
 		DD7C5D6C2D924A4E00D704C0 /* Fortunator */ = {
 			isa = PBXGroup;
 			children = (
+				DD1007EF2D98B040008E7E06 /* FortunatorTXT */,
 				DD7C5D6D2D924A4E00D704C0 /* FortunatorApp.swift */,
 				DD7C5D6F2D924A4E00D704C0 /* ContentView.swift */,
 				DD7C5D712D924A5000D704C0 /* Assets.xcassets */,
