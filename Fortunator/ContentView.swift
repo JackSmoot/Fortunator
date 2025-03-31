@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var fortune: String = ""
-    
+    @State private var selectedGenre: String = "All Categories"
+    let fortuneFiles = ["art.rtf", "computers.rtf", "cookie.rtf", "debian.rtf", "definitions.rtf", "disclaimer.rtf", "drugs.rtf", "education.rtf", "ethnic.rtf", "food.rtf", "fortunes.rtf", "goedel.rtf", "humorists.rtf", "kids.rtf", "kngtbrd.rtf", "law.rtf", "laws.rtf", "linux.rtf", "linuxcookie.rtf", "literature.rtf", "love.rtf", "magic.rtf", "medicine.rtf", "men-women.rtf", "miscellaneous.rtf", "news.rtf", "paradoxum.rtf", "people.rtf", "perl.rtf", "pets.rtf", "platitudes.rtf", "politics.rtf", "riddles.rtf", "science.rtf", "science2.rtf", "songs-poems.rtf", "sports.rtf", "startrek.rtf", "translate-me.rtf", "wisdom.rtf", "work.rtf", "zippy.rtf"] // List of files
     var body: some View {
         VStack {
-            Text("Fortune Cookie")
+            Text("Fortunator")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color.green)
@@ -25,6 +26,18 @@ struct ContentView: View {
                 .frame(width: 100, height: 100)
                 .padding()
             
+            Picker("Select a Genre", selection: $selectedGenre) {
+                Text("All Categories").tag("All Categories") // Default option
+                    .foregroundColor(Color.green)
+                ForEach(fortuneFiles, id: \.self) { file in
+                    Text(file.replacingOccurrences(of: ".rtf", with: "").capitalized)
+                        .tag(file)
+                        .foregroundColor(Color.green)
+                }
+            }
+            .pickerStyle(MenuPickerStyle()) // Dropdown menu style
+            .tint(.green)
+            
             Text(fortune)
                 .font(.title2) // Default size
                     .multilineTextAlignment(.center)
@@ -34,7 +47,7 @@ struct ContentView: View {
                     .minimumScaleFactor(0.5) // Shrinks text if it's too long
             
             Button(action: {
-                fortune = getRandomFortune()
+                fortune = getRandomFortune(from: selectedGenre)
             }) {
                 Text("Get Fortune")
                     .font(.title2)
@@ -50,17 +63,23 @@ struct ContentView: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-    func getRandomFortune() -> String {
+    func getRandomFortune(from selection: String) -> String {
         let folderName = "FortunatorTXT" // Name of the folder inside the app bundle
-        let fortuneFiles = ["art.rtf", "computers.rtf", "cookie.rtf", "debian.rtf", "definitions.rtf", "disclaimer.rtf", "drugs.rtf", "education.rtf", "ethnic.rtf", "food.rtf", "fortunes.rtf", "goedel.rtf", "humorists.rtf", "kids.rtf", "kngtbrd.rtf", "law.rtf", "laws.rtf", "linux.rtf", "linuxcookie.rtf", "literature.rtf", "love.rtf", "magic.rtf", "medicine.rtf", "men-women.rtf", "miscellaneous.rtf", "news.rtf", "paradoxum.rtf", "people.rtf", "perl.rtf", "pets.rtf", "platitudes.rtf", "politics.rtf", "riddles.rtf", "science.rtf", "science2.rtf", "songs-poems.rtf", "sports.rtf", "startrek.rtf", "translate-me.rtf", "wisdom.rtf", "work.rtf", "zippy.rtf"] // List of files
         
-        // Pick a random file
+        // Decide which file to use
+        let selectedFile: String
+        if selection == "All Categories" {
+            selectedFile = fortuneFiles.randomElement() ?? "" // Pick random file
+        } else {
+            selectedFile = selection
+        }
+
+        // Get the full path
         guard let folderURL = Bundle.main.resourceURL?.appendingPathComponent(folderName) else {
             return "Fortunes folder not found!"
         }
-            
-        let randomFile = fortuneFiles.randomElement() ?? ""
-        let fileURL = folderURL.appendingPathComponent(randomFile)
+
+        let fileURL = folderURL.appendingPathComponent(selectedFile)
 
         // Read the RTF file data
         guard let rtfData = try? Data(contentsOf: fileURL) else {
@@ -72,12 +91,12 @@ struct ContentView: View {
             return "Error processing fortune!"
         }
 
-        let plainText = attributedString.string // Extract raw text
+        let plainText = attributedString.string
 
-        // Split text by "%" to separate individual fortunes
+        // Split text by "%" to separate fortunes
         let fortunes = plainText.components(separatedBy: "%").map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
 
-        // Pick a random fortune
+                // Pick a random fortune
         return fortunes.randomElement() ?? "No fortune available!"
     }
 }
