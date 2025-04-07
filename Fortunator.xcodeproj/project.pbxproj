@@ -15,6 +15,8 @@
 		DD7C5D7F2D924A5000D704C0 /* FortunatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D7E2D924A5000D704C0 /* FortunatorTests.swift */; };
 		DD7C5D892D924A5000D704C0 /* FortunatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D882D924A5000D704C0 /* FortunatorUITests.swift */; };
 		DD7C5D8B2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C5D8A2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift */; };
+		DDF4722C2DA456FF00BBAE1E /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4722B2DA456FF00BBAE1E /* FavoritesView.swift */; };
+		DDF4722E2DA458F200BBAE1E /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4722D2DA458F200BBAE1E /* FavoritesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		DD7C5D842D924A5000D704C0 /* FortunatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortunatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7C5D882D924A5000D704C0 /* FortunatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorUITests.swift; sourceTree = "<group>"; };
 		DD7C5D8A2D924A5000D704C0 /* FortunatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDF4722B2DA456FF00BBAE1E /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		DDF4722D2DA458F200BBAE1E /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 			children = (
 				DD1007EF2D98B040008E7E06 /* FortunatorTXT */,
 				DD7C5D6D2D924A4E00D704C0 /* FortunatorApp.swift */,
+				DDF4722D2DA458F200BBAE1E /* FavoritesManager.swift */,
+				DDF4722B2DA456FF00BBAE1E /* FavoritesView.swift */,
 				DD7C5D6F2D924A4E00D704C0 /* ContentView.swift */,
 				DD7C5D712D924A5000D704C0 /* Assets.xcassets */,
 				DD7C5D732D924A5000D704C0 /* Preview Content */,
@@ -355,6 +361,8 @@
 			files = (
 				DD7C5D702D924A4E00D704C0 /* ContentView.swift in Sources */,
 				DD7C5D6E2D924A4E00D704C0 /* FortunatorApp.swift in Sources */,
+				DDF4722C2DA456FF00BBAE1E /* FavoritesView.swift in Sources */,
+				DDF4722E2DA458F200BBAE1E /* FavoritesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

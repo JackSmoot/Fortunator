@@ -8,60 +8,80 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @StateObject private var favoritesManager = FavoritesManager()
+    @State private var showingFavorites = false
+    @State private var favorites: [String] = []
     @State private var fortune: String = ""
     @State private var selectedGenre: String = "All Categories"
-    let fortuneFiles = ["art.rtf", "computers.rtf", "cookie.rtf", "debian.rtf", "definitions.rtf", "disclaimer.rtf", "drugs.rtf", "education.rtf", "ethnic.rtf", "food.rtf", "fortunes.rtf", "goedel.rtf", "humorists.rtf", "kids.rtf", "kngtbrd.rtf", "law.rtf", "laws.rtf", "linux.rtf", "linuxcookie.rtf", "literature.rtf", "love.rtf", "magic.rtf", "medicine.rtf", "men-women.rtf", "miscellaneous.rtf", "news.rtf", "paradoxum.rtf", "people.rtf", "perl.rtf", "pets.rtf", "platitudes.rtf", "politics.rtf", "riddles.rtf", "science.rtf", "science2.rtf", "songs-poems.rtf", "sports.rtf", "startrek.rtf", "translate-me.rtf", "wisdom.rtf", "work.rtf", "zippy.rtf"] // List of files
+    let fortuneFiles = ["art.rtf", "computers.rtf", "cookie.rtf", "debian.rtf", "definitions.rtf", "disclaimer.rtf", "drugs.rtf", "education.rtf", "ethnic.rtf", "food.rtf", "fortunes.rtf", "goedel.rtf", "humorists.rtf", "kids.rtf", "kngtbrd.rtf", "law.rtf", "laws.rtf", "linux.rtf", "linuxcookie.rtf", "literature.rtf", "love.rtf", "magic.rtf", "medicine.rtf", "men-women.rtf", "miscellaneous.rtf", "news.rtf", "paradoxum.rtf", "people.rtf", "perl.rtf", "pets.rtf", "platitudes.rtf", "politics.rtf", "riddles.rtf", "science.rtf", "science2.rtf", "songs-poems.rtf", "sports.rtf", "startrek.rtf", "translate-me.rtf", "wisdom.rtf", "work.rtf", "zippy.rtf"] // List of files=
     var body: some View {
-        VStack {
-            Text("Fortunator")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color.green)
-                .padding()
-            
-            Image("fortunecookie")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100)
-                .padding()
-            
-            Picker("Select a Genre", selection: $selectedGenre) {
-                Text("All Categories").tag("All Categories") // Default option
+            VStack {
+                Text("Fortunator")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .foregroundColor(Color.green)
-                ForEach(fortuneFiles, id: \.self) { file in
-                    Text(file.replacingOccurrences(of: ".rtf", with: "").capitalized)
-                        .tag(file)
-                        .foregroundColor(Color.green)
+                    .padding()
+
+                Image("fortunecookie")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                    .padding()
+
+                Picker("Select a Genre", selection: $selectedGenre) {
+                    Text("All Categories").tag("All Categories")
+                    ForEach(fortuneFiles, id: \.self) { file in
+                        Text(file.replacingOccurrences(of: ".rtf", with: "").capitalized)
+                            .tag(file)
+                    }
                 }
-            }
-            .pickerStyle(MenuPickerStyle()) // Dropdown menu style
-            .tint(.green)
-            
-            Text(fortune)
-                .font(.title2) // Default size
+                .pickerStyle(MenuPickerStyle())
+                .tint(.green)
+
+                Text(fortune)
+                    .font(.title2)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.green)
                     .padding()
-                    .lineLimit(8) // Limits to 5 lines before truncation
-                    .minimumScaleFactor(0.5) // Shrinks text if it's too long
-            
-            Button(action: {
-                fortune = getRandomFortune(from: selectedGenre)
-            }) {
-                Text("Get Fortune")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.black)
-                    .cornerRadius(30)
+                    .lineLimit(8)
+                    .minimumScaleFactor(0.5)
+
+                HStack {
+                    Button(action: {
+                        fortune = getRandomFortune(from: selectedGenre)
+                    }) {
+                        Text("Get Fortune")
+                            .font(.title2)
+                            .padding()
+                            .background(Color.green)
+                            .foregroundColor(.black)
+                            .cornerRadius(30)
+                    }
+
+                    Button(action: {
+                        favoritesManager.add(fortune)
+                    }) {
+                        Image(systemName: "star.fill")
+                            .font(.title)
+                            .foregroundColor(.yellow)
+                            .padding()
+                    }
+                }
+                .padding()
+
+                Button("View Favorites") {
+                    showingFavorites = true
+                }
+                .padding(.top, 10)
+                .foregroundColor(.green)
             }
-            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
+            .edgesIgnoringSafeArea(.all)
+            .sheet(isPresented: $showingFavorites) {
+                FavoritesView(favoritesManager: favoritesManager)
+            }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
-        .edgesIgnoringSafeArea(.all)
-    }
     
     func getRandomFortune(from selection: String) -> String {
         let folderName = "FortunatorTXT" // Name of the folder inside the app bundle
